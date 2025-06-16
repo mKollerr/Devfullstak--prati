@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários em HTML</title>
+    <style>
+        .child {
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 3px;
+            background: rgb(198, 197, 199);
+            margin: 10px;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            background: rgb(198, 197, 199);
+        }
+
+        #gender {
+            padding: 3px 20px 3px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid red;">
+        <form>
+            <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; background: #00ff4c91;">
+
+                <div class="child">
+                    <label>Nome completo:</label> <br>
+                    <input type="text" placeholder="Digite seu nome completo">
+                </div>    
+
+                <div class="child">
+                <label>Email:</label> <br>
+                <input type="email" placeholder="Digite seu Email">
+                </div>
+
+                <div class="child">
+                <label>Senha:</label> <br>
+                <input type="password" placeholder="Digite sua senha">
+                </div>
+
+                <div class="child" id="gender">
+                <label >Genero:</label>
+                <!-- <label for="male">
+                    <input type="radio" value="male" name="gender">Masculino
+                </label>
+                <label for="female">
+                    <input type="radio" value="female" name="gender">Feminino
+                </label>
+                <label for="other">
+                    <input type="radio" value="other" name="gender">Outro
+                </label> -->
+                <select name="city">
+                        <option value="female">Feminino</option>
+                        <option value="male">Masculino</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+
+                <div class="child">
+                    <label for="city">Cidade:</label>
+                    <select name="city">
+                        <option value="rs">Jaguarão</option>
+                        <option value="rs">Esteio</option>
+                        <option value="rs">Campo Bom</option>
+                        <option value="mg">Belo Horizonte</option>
+                        <option value="mg">Lagoa Santa</option>
+                    </select>
+                </div>
+
+                <div class="child">
+                    <label for="message">Mensagem</label> 
+                    <br>
+                    <textarea name="message" rows="4" placeholder="Deixe sua mensagem"></textarea>
+                </div>
+
+                <div class="child">
+                    <label for="terms">
+                        <input type="checkbox" name="terms" required>Aceito os termos de uso.
+                    </label>
+                </div>
+
+                <div  class="child">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
